@@ -26,11 +26,13 @@ let tipValue = 0.15;
 
 function billInputFunction() {
 	billValue = parseFloat(billInput.value);
+	resetButton.disabled = false;
 	calculateTip();
 }
 
 function peopleInputFunction() {
 	peopleValue = parseFloat(peopleInput.value);
+	resetButton.disabled = false;
 	calculateTip();
 
 	if (peopleValue < 1) {
@@ -67,6 +69,7 @@ function tipCustomFunction() {
 	tips.forEach(function (val) {
 		val.classList.remove("active-tip");
 	});
+	resetButton.disabled = false;
 	calculateTip();
 }
 
