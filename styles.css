@@ -216,6 +216,10 @@ input[type="number"] {
 	background: var(--Lightgrayishcyan);
 }
 
+.total-bill button:disabled{
+    background: var(--Grayishcyan);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
